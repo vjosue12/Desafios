@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body: 'Signika', sans-serif;
+    --title: 'Acme', sans-serif;
+}
+
+body {
+    background-color: #222738;
+    min-height: 200vh;
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+main > div {
+    width: 400px;
+    text-align: center;
+}
+
+.end-match {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    margin: 100px 0 0 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #fff9f9a8;
+    background-color: #222738;
+    z-index: 9999;
+    transition: all .5s;    
+}
+
+
+.end-match span {
+    padding: 50px 0 50px 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #f7f7f7b2;
+    text-shadow: 1px 1px 10px #4e0f79,
+    1px 1px 10px #4e0f79,
+    1px 1px 10px #4e0f79,
+    1px 1px 10px #4e0f79;
+}
+
+.end-match > button {
+    width: min-content;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff9f9a8;
+}
+
+.end-match > button:hover {
+    color: #fff9f9a8;
+    cursor: pointer;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+}
+
+.container .boton {
+    height: 150px;
+    background-color: #151724;
+    border: 1px solid #222738;
+    cursor: pointer;
+    font-size: 4rem;
+}
+
+.boton:hover {
+    background-color: #1517247c;
+}
+
+
+h1 {
+    padding-top: 30px;
+    font-family: var(--title);
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 10px #fca311,
+    1px 1px 10px #fca311,
+    1px 1px 10px #fca311;
+    color: #f7f7f7b2;
+    
+}
